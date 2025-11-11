@@ -1,8 +1,7 @@
 """
 functions for building CIME models
 """
-import glob, shutil, time, threading, subprocess
-import importlib.util
+import glob, shutil, time, threading, subprocess, imp
 from CIME.XML.standard_module_setup  import *
 from CIME.utils                 import get_model, analyze_build_log, stringify_bool, run_and_log_case_status, get_timestamp, run_sub_or_cmd, run_cmd, get_batch_script_for_job, gzip_existing_file, safe_copy, check_for_python, get_logging_options
 from CIME.provenance            import save_build_provenance as save_build_provenance_sub
@@ -485,9 +484,7 @@ def _create_build_metadata_for_component(config_dir, libroot, bldroot, case):
     """
     bc_path = os.path.join(config_dir, "buildlib_cmake")
     expect(os.path.exists(bc_path), "Missing: {}".format(bc_path))
-    spec = importlib.util.spec_from_file_location("buildlib_cmake", os.path.join(config_dir, "buildlib_cmake"))
-    buildlib = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(buildlib)
+    buildlib = imp.load_source("buildlib_cmake", os.path.join(config_dir, "buildlib_cmake"))
     cmake_args = buildlib.buildlib(bldroot, libroot, case)
     return "" if cmake_args is None else cmake_args
 
