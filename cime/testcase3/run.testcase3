@@ -1,0 +1,73 @@
+cpu-bind=MASK - bp1-compute096, task  0  0 [2086934]: mask 0xffffffffffff set
+Setting Environment OMP_STACKSIZE=256M
+Setting Environment PYTHONPATH=/user/home/xz20153/my_cesm_sandbox/cime/scripts/Tools/../../scripts/Tools:/user/home/xz20153/my_cesm_sandbox/cime/scripts/Tools/../../scripts/lib
+Setting Environment LD_LIBRARY_PATH=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/netcdf-c-4.9.2-abpn/lib64:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/netcdf-fortran-4.6.1-nwqu/lib:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/parallel-netcdf-1.12.3-gcjs/lib:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/openmpi-5.0.3-et6p/lib:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/esmf-8.6.1-5oo4/lib:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib64
+Generating namelists for /user/home/xz20153/my_cesm_sandbox/cime/testcase3
+Creating component namelists
+  2025-11-04 14:06:27 atm 
+   Calling /user/home/xz20153/my_cesm_sandbox/components/cam//cime_config/buildnml
+CAM namelist copy: file1 /user/home/xz20153/my_cesm_sandbox/cime/testcase3/Buildconf/camconf/atm_in file2 /user/home/xz20153/work/testcase3/run/atm_in 
+  2025-11-04 14:06:28 lnd 
+   Calling /user/home/xz20153/my_cesm_sandbox/components/clm//cime_config/buildnml
+  2025-11-04 14:06:29 ice 
+   Calling /user/home/xz20153/my_cesm_sandbox/components/cice//cime_config/buildnml
+  2025-11-04 14:06:30 ocn 
+   Calling /user/home/xz20153/my_cesm_sandbox/cime/src/components/data_comps_mct/docn/cime_config/buildnml
+copying /user/home/xz20153/my_cesm_sandbox/cime/testcase3/Buildconf/docnconf/docn_in -> /user/home/xz20153/work/testcase3/run
+copying /user/home/xz20153/my_cesm_sandbox/cime/testcase3/Buildconf/docnconf/docn.streams.txt.prescribed -> /user/home/xz20153/work/testcase3/run
+  2025-11-04 14:06:30 rof 
+   Calling /user/home/xz20153/my_cesm_sandbox/components/mosart//cime_config/buildnml
+  2025-11-04 14:06:30 glc 
+   Calling /user/home/xz20153/my_cesm_sandbox/cime/src/components/stub_comps_mct/sglc/cime_config/buildnml
+  2025-11-04 14:06:30 wav 
+   Calling /user/home/xz20153/my_cesm_sandbox/cime/src/components/stub_comps_mct/swav/cime_config/buildnml
+  2025-11-04 14:06:30 iac 
+   Running /user/home/xz20153/my_cesm_sandbox/cime/src/components/stub_comps_mct/siac/cime_config/buildnml 
+  2025-11-04 14:06:30 esp 
+   Calling /user/home/xz20153/my_cesm_sandbox/cime/src/components/stub_comps_mct/sesp/cime_config/buildnml
+  2025-11-04 14:06:30 cpl 
+   Calling /user/home/xz20153/my_cesm_sandbox/cime/src/drivers/mct/cime_config/buildnml
+   NOTE: ignoring setting of rof2ocn_fmapname=idmap in seq_maps.rc
+   NOTE: ignoring setting of rof2ocn_ice_rmapname=idmap in seq_maps.rc
+   NOTE: ignoring setting of rof2ocn_liq_rmapname=idmap in seq_maps.rc
+copying /user/home/xz20153/my_cesm_sandbox/cime/testcase3/Buildconf/cplconf/drv_in -> /user/home/xz20153/work/testcase3/run
+copying /user/home/xz20153/my_cesm_sandbox/cime/testcase3/CaseDocs/drv_flds_in -> /user/home/xz20153/work/testcase3/run
+copying /user/home/xz20153/my_cesm_sandbox/cime/testcase3/Buildconf/cplconf/seq_maps.rc -> /user/home/xz20153/work/testcase3/run
+copying /user/home/xz20153/my_cesm_sandbox/cime/testcase3/Buildconf/cplconf/glc_modelio.nml -> /user/home/xz20153/work/testcase3/run
+copying /user/home/xz20153/my_cesm_sandbox/cime/testcase3/Buildconf/cplconf/iac_modelio.nml -> /user/home/xz20153/work/testcase3/run
+copying /user/home/xz20153/my_cesm_sandbox/cime/testcase3/Buildconf/cplconf/ocn_modelio.nml -> /user/home/xz20153/work/testcase3/run
+copying /user/home/xz20153/my_cesm_sandbox/cime/testcase3/Buildconf/cplconf/esp_modelio.nml -> /user/home/xz20153/work/testcase3/run
+copying /user/home/xz20153/my_cesm_sandbox/cime/testcase3/Buildconf/cplconf/ice_modelio.nml -> /user/home/xz20153/work/testcase3/run
+copying /user/home/xz20153/my_cesm_sandbox/cime/testcase3/Buildconf/cplconf/wav_modelio.nml -> /user/home/xz20153/work/testcase3/run
+copying /user/home/xz20153/my_cesm_sandbox/cime/testcase3/Buildconf/cplconf/lnd_modelio.nml -> /user/home/xz20153/work/testcase3/run
+copying /user/home/xz20153/my_cesm_sandbox/cime/testcase3/Buildconf/cplconf/atm_modelio.nml -> /user/home/xz20153/work/testcase3/run
+copying /user/home/xz20153/my_cesm_sandbox/cime/testcase3/Buildconf/cplconf/rof_modelio.nml -> /user/home/xz20153/work/testcase3/run
+copying /user/home/xz20153/my_cesm_sandbox/cime/testcase3/Buildconf/cplconf/cpl_modelio.nml -> /user/home/xz20153/work/testcase3/run
+copying /user/home/xz20153/work/testcase3/run/glc_modelio.nml -> /user/home/xz20153/my_cesm_sandbox/cime/testcase3/CaseDocs
+copying /user/home/xz20153/work/testcase3/run/iac_modelio.nml -> /user/home/xz20153/my_cesm_sandbox/cime/testcase3/CaseDocs
+copying /user/home/xz20153/work/testcase3/run/ocn_modelio.nml -> /user/home/xz20153/my_cesm_sandbox/cime/testcase3/CaseDocs
+copying /user/home/xz20153/work/testcase3/run/esp_modelio.nml -> /user/home/xz20153/my_cesm_sandbox/cime/testcase3/CaseDocs
+copying /user/home/xz20153/work/testcase3/run/ice_modelio.nml -> /user/home/xz20153/my_cesm_sandbox/cime/testcase3/CaseDocs
+copying /user/home/xz20153/work/testcase3/run/wav_modelio.nml -> /user/home/xz20153/my_cesm_sandbox/cime/testcase3/CaseDocs
+copying /user/home/xz20153/work/testcase3/run/lnd_modelio.nml -> /user/home/xz20153/my_cesm_sandbox/cime/testcase3/CaseDocs
+copying /user/home/xz20153/work/testcase3/run/atm_modelio.nml -> /user/home/xz20153/my_cesm_sandbox/cime/testcase3/CaseDocs
+copying /user/home/xz20153/work/testcase3/run/rof_modelio.nml -> /user/home/xz20153/my_cesm_sandbox/cime/testcase3/CaseDocs
+copying /user/home/xz20153/work/testcase3/run/cpl_modelio.nml -> /user/home/xz20153/my_cesm_sandbox/cime/testcase3/CaseDocs
+copying /user/home/xz20153/work/testcase3/run/ice_in -> /user/home/xz20153/my_cesm_sandbox/cime/testcase3/CaseDocs
+copying /user/home/xz20153/work/testcase3/run/atm_in -> /user/home/xz20153/my_cesm_sandbox/cime/testcase3/CaseDocs
+copying /user/home/xz20153/work/testcase3/run/drv_in -> /user/home/xz20153/my_cesm_sandbox/cime/testcase3/CaseDocs
+copying /user/home/xz20153/work/testcase3/run/mosart_in -> /user/home/xz20153/my_cesm_sandbox/cime/testcase3/CaseDocs
+copying /user/home/xz20153/work/testcase3/run/docn_in -> /user/home/xz20153/my_cesm_sandbox/cime/testcase3/CaseDocs
+copying /user/home/xz20153/work/testcase3/run/drv_flds_in -> /user/home/xz20153/my_cesm_sandbox/cime/testcase3/CaseDocs
+copying /user/home/xz20153/work/testcase3/run/lnd_in -> /user/home/xz20153/my_cesm_sandbox/cime/testcase3/CaseDocs
+copying /user/home/xz20153/work/testcase3/run/docn.streams.txt.prescribed -> /user/home/xz20153/my_cesm_sandbox/cime/testcase3/CaseDocs
+copying /user/home/xz20153/work/testcase3/run/seq_maps.rc -> /user/home/xz20153/my_cesm_sandbox/cime/testcase3/CaseDocs
+copying /user/home/xz20153/my_cesm_sandbox/cime/testcase3/Buildconf/camconf/chem_mech.in -> /user/home/xz20153/my_cesm_sandbox/cime/testcase3/CaseDocs
+copying /user/home/xz20153/my_cesm_sandbox/cime/testcase3/Buildconf/camconf/chem_mech.doc -> /user/home/xz20153/my_cesm_sandbox/cime/testcase3/CaseDocs
+-------------------------------------------------------------------------
+ - Prestage required restarts into /user/home/xz20153/work/testcase3/run
+ - Case input data directory (DIN_LOC_ROOT) is /user/home/xz20153/work/CESM_Input 
+ - Checking for required input datasets in DIN_LOC_ROOT
+-------------------------------------------------------------------------
+run command is mpirun --bind-to none -np 192 /user/home/xz20153/work/testcase3/bld/cesm.exe   >> cesm.log.$LID 2>&1  
+slurmstepd: error: *** JOB 14259533 ON bp1-compute096 CANCELLED AT 2025-11-04T14:34:35 ***

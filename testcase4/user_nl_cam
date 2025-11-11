@@ -1,0 +1,63 @@
+! Users should add all user specific namelist changes below in the form of 
+! namelist_var = new_namelist_value 
+
+!-------------------------------------------------------------------------------
+! History File Configuration for Full 3D Atmospheric Output
+!-------------------------------------------------------------------------------
+
+! Number of time samples per history file for each stream (h0, h1, h2, ...)
+! 0 = monthly average (default for h0)
+! Positive number = write every N timesteps
+! Example: mfilt = 1, 30, 365 means:
+!   h0: 1 monthly average per file
+!   h1: 30 daily snapshots per file
+!   h2: 365 daily snapshots per file
+mfilt = 1, 30
+
+! Output frequency for each history stream
+! 0 = monthly average (default for h0)
+! Positive number = every N timesteps
+! Negative number = every N hours
+! Example: nhtfrq = 0, -24 means:
+!   h0: monthly averages
+!   h1: daily output (every 24 hours)
+nhtfrq = 0, -24
+
+! Averaging flag for each stream
+! 'A' = average over output interval
+! 'I' = instantaneous snapshot
+! 'X' = maximum over interval
+! 'M' = minimum over interval
+avgflag_pertape = 'A', 'I'
+
+!-------------------------------------------------------------------------------
+! Field Inclusion Lists - Variables to output on each stream
+!-------------------------------------------------------------------------------
+
+! h0 (monthly averages) - Include key 3D fields and surface variables
+! Default h0 includes many standard fields, but we'll add important ones explicitly
+fincl1 = 'T', 'U', 'V', 'Q', 'OMEGA', 'Z3', 'PS', 'PSL', 'PHIS',
+         'CLOUD', 'CLDTOT', 'CLDLOW', 'CLDMED', 'CLDHGH',
+         'PRECL', 'PRECC', 'PRECT', 'PRECSL', 'PRECSC',
+         'FLNT', 'FLNS', 'FSNT', 'FSNS', 'LHFLX', 'SHFLX',
+         'TAUX', 'TAUY', 'TS', 'TREFHT', 'QREFHT',
+         'TMQ', 'TGCLDLWP', 'TGCLDIWP'
+
+! h1 (daily instantaneous) - Same key 3D fields for daily analysis
+fincl2 = 'T', 'U', 'V', 'Q', 'OMEGA', 'Z3', 'PS', 'PSL',
+         'CLOUD', 'PRECT', 'TS', 'TREFHT'
+
+!-------------------------------------------------------------------------------
+! Additional Useful Settings
+!-------------------------------------------------------------------------------
+
+! Exclude certain fields from h0 if you want to reduce file size
+! Uncomment and add variables you don't need:
+! fexcl1 = 'PTTEND', 'DTCOND'
+
+! For even more frequent output (e.g., hourly), add h2:
+! Uncomment these lines for hourly output:
+! mfilt = 1, 30, 24
+! nhtfrq = 0, -24, -1
+! avgflag_pertape = 'A', 'I', 'I'
+! fincl3 = 'T', 'U', 'V', 'Q', 'PS'

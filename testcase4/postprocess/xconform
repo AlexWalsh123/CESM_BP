@@ -1,0 +1,53 @@
+#! /usr/bin/env bash
+##########
+##
+## See https://github.com/NCAR/CESM_postprocessing/wiki for details
+## regarding settings for optimal performance for CESM postprocessing tools.
+##
+##########
+
+#!/bin/bash
+#SBATCH --cpus-per-task=16
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=16
+#SBATCH --time=06:00:00
+#SBATCH --job-name=xconform
+#SBATCH --mem=100G
+#SBATCH --error=xconform.err.%J
+#SBATCH --output=xconform.out.%J
+#SBATCH --account=phys034924
+
+if [ ! -e /user/home/xz20153/CESM_postprocessing/cesm-env2/bin ]; then
+    echo "*************************************************************************************"
+    echo "CESM xconform exiting due to non-existant python virtual environment in"
+    echo "    /user/home/xz20153/CESM_postprocessing/cesm-env2/bin"
+    echo "You must first run:"
+    echo "$SRCROOT/postprocessing/create_python_env -machine [machine]"
+    echo "*************************************************************************************"
+    exit
+fi
+
+
+module purge
+
+
+source /user/home/xz20153/CESM_postprocessing/cesm-env2/bin/activate
+
+
+module load languages/python/3.8.20
+
+module load gcc/12.3.0-sknc
+
+module load openmpi/5.0.3-et6p
+
+module load netcdf-c/4.9.2-abpn
+
+module load netcdf-fortran/4.6.1-nwqu
+
+
+
+
+today="$(date '+%Y%m%d-%H%M%S')"
+
+mpirun -np 16 --bind-to none cesm_conform_generator.py --debug 0  --caseroot /user/home/xz20153/my_cesm_sandbox/testcase4/postprocess >> /user/home/xz20153/my_cesm_sandbox/testcase4/postprocess/logs/xconform.log.$today 2>&1
+

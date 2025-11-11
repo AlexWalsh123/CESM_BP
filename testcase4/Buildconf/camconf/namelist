@@ -1,0 +1,46 @@
+&comp_inparm 
+
+ dtime = 1800
+
+
+
+
+mfilt = 1, 30
+
+
+
+nhtfrq = 0, -24
+
+
+
+avgflag_pertape = 'A', 'I'
+
+
+
+
+
+fincl1 = 'T', 'U', 'V', 'Q', 'OMEGA', 'Z3', 'PS', 'PSL', 'PHIS',
+
+         'CLOUD', 'CLDTOT', 'CLDLOW', 'CLDMED', 'CLDHGH',
+
+         'PRECL', 'PRECC', 'PRECT', 'PRECSL', 'PRECSC',
+
+         'FLNT', 'FLNS', 'FSNT', 'FSNS', 'LHFLX', 'SHFLX',
+
+         'TAUX', 'TAUY', 'TS', 'TREFHT', 'QREFHT',
+
+         'TMQ', 'TGCLDLWP', 'TGCLDIWP'
+
+
+
+fincl2 = 'T', 'U', 'V', 'Q', 'OMEGA', 'Z3', 'PS', 'PSL',
+
+         'CLOUD', 'PRECT', 'TS', 'TREFHT'
+
+
+
+
+
+
+
+/ 

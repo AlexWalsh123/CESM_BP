@@ -1,0 +1,14 @@
+&drydep_inparm
+/
+&megan_emis_nl
+/
+&fire_emis_nl
+/
+&carma_inparm
+/
+!#--------------------------------------------------------------------------------------------------------------------------
+!# drv_flds_in:: Comment:
+!# This namelist was created using the following command-line:
+!#     /user/home/xz20153/my_cesm_sandbox/components/clm/bld/CLM build-namelist -cimeroot /user/home/xz20153/my_cesm_sandbox/cime/scripts/Tools/../.. -infile /user/home/xz20153/my_cesm_sandbox/cime/testcase3/Buildconf/clmconf/namelist -csmdata /user/home/xz20153/work/CESM_Input -inputdata /user/home/xz20153/my_cesm_sandbox/cime/testcase3/Buildconf/clm.input_data_list -ignore_ic_year -namelist &clm_inparm  start_ymd=00010101 /  -no-megan -use_case 2000_control -res 0.9x1.25 -clm_start_type default -envxml_dir /user/home/xz20153/my_cesm_sandbox/cime/testcase3 -configuration clm -structure standard -lnd_frac /user/home/xz20153/work/CESM_Input/share/domains/domain.lnd.fv0.9x1.25_gx1v7.151020.nc -glc_nec 10 -co2_ppmv 367.0 -co2_type diagnostic -config /user/home/xz20153/my_cesm_sandbox/cime/testcase3/Buildconf/clmconf/config_cache.xml -bgc sp -clm_accelerated_spinup off -lnd_tuning_mode clm5_0_cam6.0 -mask gx1v7
+!# For help on options use: /user/home/xz20153/my_cesm_sandbox/components/clm/bld/CLM build-namelist -help
+!#--------------------------------------------------------------------------------------------------------------------------

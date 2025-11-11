@@ -1,0 +1,3 @@
+domain1 = /user/home/xz20153/work/CESM_Input/share/domains/domain.ocn.fv0.9x1.25_gx1v7.151020.nc
+file1 = /user/home/xz20153/work/CESM_Input/atm/cam/sst/sst_HadOIBl_bc_0.9x1.25_2000climo_c180511.nc
+domainfile = /user/home/xz20153/work/CESM_Input/share/domains/domain.ocn.fv0.9x1.25_gx1v7.151020.nc

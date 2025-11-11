@@ -1,0 +1,128 @@
+2025-11-04 11:32:42: case.setup starting 
+ ---------------------------------------------------
+2025-11-04 11:32:43: case.setup success 
+ ---------------------------------------------------
+2025-11-04 14:30:11: case.submit starting 
+ ---------------------------------------------------
+2025-11-04 14:30:16: case.submit error 
+ERROR: Build complete is not True please rebuild the model by calling case.build
+ ---------------------------------------------------
+2025-11-04 14:30:24: case.setup starting 
+ ---------------------------------------------------
+2025-11-04 14:30:24: case.setup success 
+ ---------------------------------------------------
+2025-11-04 14:30:28: case.build starting 
+ ---------------------------------------------------
+2025-11-04 14:32:31: case.build error 
+ERROR: Error gathering provenance information from manage_externals.
+
+manage_externals error message:
+    ERROR:root:[Errno 2] No such file or directory: 'svn'
+    ERROR:root:In directory
+        /user/home/xz20153/my_cesm_sandbox/components/cam
+    Command execution failed. Does the executable exist?:
+        svn info /user/home/xz20153/my_cesm_sandbox/components/cam/chem_proc
+
+manage_externals output:
+    Processing externals description file : Externals.cfg (/user/home/xz20153/my_cesm_sandbox)
+    Processing externals description file : Externals_CAM.cfg (/user/home/xz20153/my_cesm_sandbox/components/cam)
+    Processing externals description file : .gitmodules (/user/home/xz20153/my_cesm_sandbox/components/cdeps)
+    Processing externals description file : ../Externals_cime.cfg (/user/home/xz20153/my_cesm_sandbox/cime)
+    Processing externals description file : Externals_CISM.cfg (/user/home/xz20153/my_cesm_sandbox/components/cism)
+    Processing externals description file : Externals_CLM.cfg (/user/home/xz20153/my_cesm_sandbox/components/clm)
+    Processing externals description file : Externals_POP.cfg (/user/home/xz20153/my_cesm_sandbox/components/pop)
+    Checking local status of required & optional components: cam, chem_proc, 
+    ERROR: In directory
+        /user/home/xz20153/my_cesm_sandbox/components/cam
+    Command execution failed. Does the executable exist?:
+        svn info /user/home/xz20153/my_cesm_sandbox/components/cam/chem_proc
+
+To solve this, either:
+
+(1) Find and fix the problem: From /user/home/xz20153/my_cesm_sandbox, try to get this command to work:
+    manage_externals/checkout_externals --status --verbose --no-logging
+
+(2) If you don't need provenance information, rebuild with --skip-provenance-check
+
+ ---------------------------------------------------
+2025-11-04 14:33:17: case.build starting 
+ ---------------------------------------------------
+CESM version is release-cesm2.2.2
+Processing externals description file : Externals.cfg (/user/home/xz20153/my_cesm_sandbox)
+Processing externals description file : Externals_CAM.cfg (/user/home/xz20153/my_cesm_sandbox/components/cam)
+Processing externals description file : .gitmodules (/user/home/xz20153/my_cesm_sandbox/components/cdeps)
+Processing externals description file : ../Externals_cime.cfg (/user/home/xz20153/my_cesm_sandbox/cime)
+Processing externals description file : Externals_CISM.cfg (/user/home/xz20153/my_cesm_sandbox/components/cism)
+Processing externals description file : Externals_CLM.cfg (/user/home/xz20153/my_cesm_sandbox/components/clm)
+Processing externals description file : Externals_POP.cfg (/user/home/xz20153/my_cesm_sandbox/components/pop)
+Checking local status of required & optional components: cam, chem_proc, carma, cosp2, clubb, silhs, pumas, atmos_phys, atmos_cubed_sphere, cice, cdeps, fox, cime, cmeps, cism, source_cism, clm, fates, fms, mom, mosart, pop, cvmix, marbl, rtm, ww3, 
+sM  ./cime
+        modified sandbox, 1f3d77b7f45eceff8f0a6e758b208e8f3538c0d5 --> cime5.8.32.9
+e-o ./cime/src/drivers/nuopc/
+        -, not checked out --> 
+ M  ./components/cam
+        modified sandbox, on cam_cesm2_2_rel_09
+    ./components/cam/chem_proc
+        clean sandbox, on tools/proc_atm/chem_proc/release_tags/chem_proc5_0_04
+    ./components/cam/src/atmos_phys
+        clean sandbox, on version0_00_007
+    ./components/cam/src/dynamics/fv3/atmos_cubed_sphere
+        clean sandbox, on fv3_cesm.04
+    ./components/cam/src/physics/carma/base
+        clean sandbox, on carma/release_tags/carma3_49_rel
+    ./components/cam/src/physics/clubb
+        clean sandbox, on clubb_release_b76a124_20200220_c20200320
+    ./components/cam/src/physics/cosp2/src
+        clean sandbox, on v2.1.4cesm
+    ./components/cam/src/physics/pumas
+        clean sandbox, on pumas_cam-release_v1.3
+    ./components/cam/src/physics/silhs
+        clean sandbox, on silhs_clubb_release_b76a124_20200220_c20200320
+    ./components/cdeps
+        clean sandbox, on d808b7c6f78a2d5dcfeb1da0d1a452a9b66e08c8
+    ./components/cdeps/fox
+        clean sandbox, on 7b9488446b193192dd3f0378541e71099cb4e8a8
+    ./components/cice
+        clean sandbox, on cice5-cesm2.2.2-20231220
+    ./components/cism
+        clean sandbox, on cism2_1_69_b
+    ./components/cism/source_cism
+        clean sandbox, on release-cesm2.2.2-f1a88d6derecho
+    ./components/clm
+        clean sandbox, on release-cesm2.2.04
+    ./components/clm/src/fates
+        clean sandbox, on sci.1.30.0_api.8.0.0
+e-o ./components/mom
+        -, not checked out --> mi_20200908
+    ./components/mosart
+        clean sandbox, on mosart1_0_37_1
+    ./components/pop
+        clean sandbox, on pop2_cesm2_2_rel_n01
+    ./components/pop/externals/CVMix
+        clean sandbox, on v0.98-beta
+    ./components/pop/externals/MARBL
+        clean sandbox, on cesm2.2-n00
+    ./components/rtm
+        clean sandbox, on rtm1_0_72
+    ./components/ww3
+        clean sandbox, on ww3_200710
+e-o ./libraries/FMS
+        -, not checked out --> fi_20200609_cesm2.2_231205
+2025-11-04 14:33:26: case.build success 
+ ---------------------------------------------------
+2025-11-04 14:33:38: case.submit starting 
+ ---------------------------------------------------
+2025-11-04 14:33:40: case.submit success case.run:14280212, case.st_archive:14280216
+ ---------------------------------------------------
+2025-11-04 14:33:48: case.run starting 
+ ---------------------------------------------------
+2025-11-04 14:33:57: model execution starting 
+ ---------------------------------------------------
+2025-11-04 15:13:11: model execution success 
+ ---------------------------------------------------
+2025-11-04 15:13:11: case.run success 
+ ---------------------------------------------------
+2025-11-04 15:13:17: st_archive starting 
+ ---------------------------------------------------
+2025-11-04 15:13:34: st_archive success 
+ ---------------------------------------------------

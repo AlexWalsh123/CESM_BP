@@ -1,0 +1,108 @@
+cpu-bind=MASK - bp1-compute057, task  0  0 [2939890]: mask 0xffffffffffff set
+Setting Environment OMP_STACKSIZE=256M
+Setting Environment PYTHONPATH=/user/home/xz20153/my_cesm_sandbox/cime/scripts/Tools/../../scripts/Tools:/user/home/xz20153/my_cesm_sandbox/cime/scripts/Tools/../../scripts/lib
+Setting Environment LD_LIBRARY_PATH=/software/spack/linux-rocky8-broadwell/gcc-12.3.0/netcdf-c-4.9.2-abpn/lib64:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/netcdf-fortran-4.6.1-nwqu/lib:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/parallel-netcdf-1.12.3-gcjs/lib:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/openmpi-5.0.3-et6p/lib:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/esmf-8.6.1-5oo4/lib:/software/spack/linux-rocky8-broadwell/gcc-12.3.0/gcc-12.3.0-sknc/lib64
+st_archive starting
+moving /user/home/xz20153/work/testcase4/run/ocn.log.14280212.251104-143348.gz to /user/home/xz20153/work/archive/testcase4/logs/ocn.log.14280212.251104-143348.gz
+moving /user/home/xz20153/work/testcase4/run/ice.log.14280212.251104-143348.gz to /user/home/xz20153/work/archive/testcase4/logs/ice.log.14280212.251104-143348.gz
+moving /user/home/xz20153/work/testcase4/run/cpl.log.14280212.251104-143348.gz to /user/home/xz20153/work/archive/testcase4/logs/cpl.log.14280212.251104-143348.gz
+moving /user/home/xz20153/work/testcase4/run/cesm.log.14280212.251104-143348.gz to /user/home/xz20153/work/archive/testcase4/logs/cesm.log.14280212.251104-143348.gz
+moving /user/home/xz20153/work/testcase4/run/lnd.log.14280212.251104-143348.gz to /user/home/xz20153/work/archive/testcase4/logs/lnd.log.14280212.251104-143348.gz
+moving /user/home/xz20153/work/testcase4/run/atm.log.14280212.251104-143348.gz to /user/home/xz20153/work/archive/testcase4/logs/atm.log.14280212.251104-143348.gz
+moving /user/home/xz20153/work/testcase4/run/rof.log.14280212.251104-143348.gz to /user/home/xz20153/work/archive/testcase4/logs/rof.log.14280212.251104-143348.gz
+-------------------------------------------
+Archiving restarts for date date(1, 1, 6, 0, 0, 0)
+-------------------------------------------
+Archiving restarts for cam (atm)
+copying /user/home/xz20153/work/testcase4/run/rpointer.ice -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.lnd -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.rof -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.atm -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.ocn -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.drv -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/testcase4.cam.r.0001-01-06-00000.nc -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying file /user/home/xz20153/work/testcase4/run/testcase4.cam.r.0001-01-06-00000.nc to /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000/testcase4.cam.r.0001-01-06-00000.nc
+Copying /user/home/xz20153/work/testcase4/run/testcase4.cam.h6.0001-01-01-00000.nc to /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000/testcase4.cam.h6.0001-01-01-00000.nc
+copying /user/home/xz20153/work/testcase4/run/testcase4.cam.h6.0001-01-01-00000.nc -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+ WARNING: ncdump -v nhfil /user/home/xz20153/work/testcase4/run/testcase4.cam.rh0.0001-01-06-00000.nc  failed rc=1
+    out=
+    err=ncdump: nhfil: No such variable
+copying /user/home/xz20153/work/testcase4/run/testcase4.cam.rh0.0001-01-06-00000.nc -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying file /user/home/xz20153/work/testcase4/run/testcase4.cam.rh0.0001-01-06-00000.nc to /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000/testcase4.cam.rh0.0001-01-06-00000.nc
+ WARNING: ncdump -v nhfil /user/home/xz20153/work/testcase4/run/testcase4.cam.rs.0001-01-06-00000.nc  failed rc=1
+    out=
+    err=ncdump: nhfil: No such variable
+copying /user/home/xz20153/work/testcase4/run/testcase4.cam.rs.0001-01-06-00000.nc -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying file /user/home/xz20153/work/testcase4/run/testcase4.cam.rs.0001-01-06-00000.nc to /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000/testcase4.cam.rs.0001-01-06-00000.nc
+Archiving restarts for clm (lnd)
+copying /user/home/xz20153/work/testcase4/run/rpointer.ice -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.lnd -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.rof -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.atm -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.ocn -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.drv -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/testcase4.clm2.r.0001-01-06-00000.nc -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying file /user/home/xz20153/work/testcase4/run/testcase4.clm2.r.0001-01-06-00000.nc to /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000/testcase4.clm2.r.0001-01-06-00000.nc
+ WARNING: ncdump -v locfnh /user/home/xz20153/work/testcase4/run/testcase4.clm2.rh0.0001-01-06-00000.nc  failed rc=1
+    out=
+    err=ncdump: locfnh: No such variable
+copying /user/home/xz20153/work/testcase4/run/testcase4.clm2.rh0.0001-01-06-00000.nc -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying file /user/home/xz20153/work/testcase4/run/testcase4.clm2.rh0.0001-01-06-00000.nc to /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000/testcase4.clm2.rh0.0001-01-06-00000.nc
+Archiving restarts for cice (ice)
+copying /user/home/xz20153/work/testcase4/run/rpointer.ice -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.lnd -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.rof -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.atm -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.ocn -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.drv -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/testcase4.cice.r.0001-01-06-00000.nc -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying file /user/home/xz20153/work/testcase4/run/testcase4.cice.r.0001-01-06-00000.nc to /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000/testcase4.cice.r.0001-01-06-00000.nc
+Archiving restarts for docn (ocn)
+copying /user/home/xz20153/work/testcase4/run/rpointer.ice -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.lnd -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.rof -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.atm -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.ocn -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.drv -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/testcase4.docn.rs1.0001-01-06-00000.bin -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying file /user/home/xz20153/work/testcase4/run/testcase4.docn.rs1.0001-01-06-00000.bin to /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000/testcase4.docn.rs1.0001-01-06-00000.bin
+Archiving restarts for mosart (rof)
+copying /user/home/xz20153/work/testcase4/run/rpointer.ice -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.lnd -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.rof -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.atm -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.ocn -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.drv -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/testcase4.mosart.r.0001-01-06-00000.nc -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying file /user/home/xz20153/work/testcase4/run/testcase4.mosart.r.0001-01-06-00000.nc to /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000/testcase4.mosart.r.0001-01-06-00000.nc
+ WARNING: ncdump -v locfnh /user/home/xz20153/work/testcase4/run/testcase4.mosart.rh0.0001-01-06-00000.nc  failed rc=1
+    out=
+    err=ncdump: locfnh: No such variable
+copying /user/home/xz20153/work/testcase4/run/testcase4.mosart.rh0.0001-01-06-00000.nc -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying file /user/home/xz20153/work/testcase4/run/testcase4.mosart.rh0.0001-01-06-00000.nc to /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000/testcase4.mosart.rh0.0001-01-06-00000.nc
+Archiving restarts for drv (cpl)
+copying /user/home/xz20153/work/testcase4/run/rpointer.ice -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.lnd -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.rof -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.atm -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.ocn -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.drv -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/testcase4.cpl.r.0001-01-06-00000.nc -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying file /user/home/xz20153/work/testcase4/run/testcase4.cpl.r.0001-01-06-00000.nc to /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000/testcase4.cpl.r.0001-01-06-00000.nc
+Archiving restarts for dart (esp)
+copying /user/home/xz20153/work/testcase4/run/rpointer.ice -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.lnd -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.rof -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.atm -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.ocn -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+copying /user/home/xz20153/work/testcase4/run/rpointer.drv -> /user/home/xz20153/work/archive/testcase4/rest/0001-01-06-00000
+Archiving history files for cam (atm)
+copying /user/home/xz20153/work/testcase4/run/testcase4.cam.h6.0001-01-01-00000.nc to /user/home/xz20153/work/archive/testcase4/atm/hist/testcase4.cam.h6.0001-01-01-00000.nc 
+copying /user/home/xz20153/work/testcase4/run/testcase4.cam.h6.0001-01-01-00000.nc -> /user/home/xz20153/work/archive/testcase4/atm/hist
+Archiving history files for clm (lnd)
+Archiving history files for cice (ice)
+Archiving history files for docn (ocn)
+Archiving history files for mosart (rof)
+Archiving history files for drv (cpl)
+Archiving history files for dart (esp)
+st_archive completed

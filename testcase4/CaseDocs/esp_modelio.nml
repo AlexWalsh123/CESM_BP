@@ -1,0 +1,13 @@
+&modelio
+  diri = "/user/home/xz20153/work/testcase4/bld/esp"
+  diro = "/user/home/xz20153/work/testcase4/run"
+  logfile = "esp.log.251106-140557"
+/
+&pio_inparm
+  pio_netcdf_format = ""
+  pio_numiotasks = -99
+  pio_rearranger = -99
+  pio_root = -99
+  pio_stride = -99
+  pio_typename = "nothing"
+/

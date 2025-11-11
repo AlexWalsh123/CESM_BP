@@ -1,0 +1,3 @@
+ERROR diagUtilsLib.checkHistoryFiles: No history time slice files found matching pattern = re.compile('.*\\.cam.h6.\\d{4,4}-\\d{2,2}\\.nc')
+/user/home/xz20153/CESM_postprocessing/cesm-env2/bin/atm_avg_generator.py:4: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  __import__('pkg_resources').require('diagnostics==0.1.0.dev0')
